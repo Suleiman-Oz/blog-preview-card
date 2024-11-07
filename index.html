@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+      /* 
+- Family: [Figtree](https://fonts.google.com/specimen/Figtree)
+- Weights: 500, 800 */
+      :root {
+        --pri-yellow: hsl(47, 88%, 63%);
+        --pri-white: hsl(0, 0%, 100%);
+        --pri-gray-500: hsl(0, 0%, 42%);
+        --pri-gray-950: hsl(0, 0%, 7%);
+        --body-font: 'Figtree', sans-serif;
+        --body-font-size: 16px;
+        --body-font-weight: 500;
+        --body-font-weight-bold: 800;
+        --body-line-height: 1.6;
+      }
+      body {
+        background-color: var(--pri-yellow);
+      }
+      /* .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: hsl(0, 0%, 95%);
+      } */
+      .container {
+        margin: auto;
+        width: 335px;
+        background-color: hsl(0, 0%, 95%);
+        padding:  25px 40px 0 25px;
+        border-radius: 20px;
+        border: 1px solid var(--pri-gray-950);
+        font-family: var(--body-font);
+        box-shadow: 8px 8px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      img {
+        border-radius: 15px;
+        margin-bottom: 25px;
+        width: 350px;
+      }
+      span {
+        background-color: var(--pri-yellow);
+        padding: 6px 15px;
+        font-weight: var(--body-font-weight-bold);
+        border-radius: 4px;
+      }
+      .pb {
+        color: #353333;
+        font-weight: var(--body-font-weight);
+      }
+      h1 {
+        font-size: 24px;
+        font-weight: var(--body-font-weight-bold);
+        margin-bottom: 20px;
+      }
+      h1:hover {
+        cursor: pointer;
+        color: var(--pri-yellow);
+      }
+      .container p {
+        font-size: 17px;
+        line-height: var(--body-line-height);
+        margin-bottom: 20px;
+        font-weight: var(--body-font-weight);
+        color: var(--pri-gray-500);
+      }
+      .profile {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+      .profile img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+      .profile p {
+        font-size: 16px;
+        color: var(--pri-gray-950);
+        font-weight: var(--body-font-weight-bold);
+        margin-top: -10px;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="container">
+        <img src="assets/images/illustration-article.svg" alt="" />
+        <span>Learning</span>
+
+        <p class="pb">Published 21 Dec 2023</p>
+
+        <h1>HTML & CSS foundations</h1>
+
+        <p>
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </p>
+
+        <div class="profile">
+          <img src="assets/images/image-avatar.webp" alt="" />
+          <p>Greg Hooper</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/Suleiman-Oz">Suleiman</a>.
+    </div>
+  </body>
+</html>
